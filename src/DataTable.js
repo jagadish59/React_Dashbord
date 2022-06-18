@@ -1,0 +1,113 @@
+export const usercolumns=[
+    { field: 'id', headerName: 'ID', width: 70 },
+    {
+        field:'user',headerName:'USER',width:230,
+        renderCell:(params)=>{
+            return( <div className="cellwidthimg ">
+                <img src={params.row.img} alt='name' className="image"/>
+                {params.row.username}
+            </div> )
+        }
+    },
+    {
+        field:'email',headerName:"EMAIL",width:230
+    },
+    {
+        field:'age',headerName:"AGE",width:80
+    },
+    {
+        field:'status',headerName:"STATUS",width:100,
+        renderCell:(params)=>{
+            return(
+                <div className={`cellwithStatus ${params.row.status}`}>
+                    {params.row.status}
+
+                </div>
+            )
+        }
+    },
+    
+]
+
+export const userrow=[
+    {
+        id:1,
+        username:'ram',
+        img:'https://picsum.photos/200?nature',
+        status:'active',
+        email:'hello@gmail.com',
+        age:'24'
+    },
+    {
+        id:2,
+        username:'hari',
+        img:'https://picsum.photos/200?nature',
+        status:'active',
+        email:'hello@gmail.com',
+        age:'24'
+    },
+    {
+        id:3,
+        username:'ram',
+        img:'https://picsum.photos/200?nature',
+        status:'passive',
+        email:'hello@gmail.com',
+        age:'24'
+    },
+    {
+        id:4,
+        username:'ram',
+        img:'https://picsum.photos/200?nature',
+        status:'active',
+        email:'hello@gmail.com',
+        age:'24'
+    },
+    {
+        id:5,
+        username:'ram',
+        img:'https://picsum.photos/200?nature',
+        status:'passive',
+        email:'hello@gmail.com',
+        age:'24'
+    },
+    {
+        id:6,
+        username:'ram',
+        img:'https://picsum.photos/200?nature',
+        status:'pending',
+        email:'hello@gmail.com',
+        age:'24'
+    },
+    {
+        id:7,
+        username:'ram',
+        img:'https://picsum.photos/200?nature',
+        status:'active',
+        email:'hello@gmail.com',
+        age:'24'
+    },
+    {
+        id:8,
+        username:'ram',
+        img:'https://picsum.photos/200?nature',
+        status:'active',
+        email:'hello@gmail.com',
+        age:'24'
+    },
+    {
+        id:9,
+        username:'ram',
+        img:'https://picsum.photos/200?nature',
+        status:'active',
+        email:'hello@gmail.com',
+        age:'24'
+    },
+    {
+        id:10,
+        username:'ram',
+        img:'https://picsum.photos/200?nature',
+        status:'active',
+        email:'hello@gmail.com',
+        age:'24'
+    },
+]

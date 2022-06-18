@@ -1,0 +1,91 @@
+.single {
+    display: flex;
+    width: 100%;
+
+    .singleContainer {
+        flex: 6;
+
+        .top {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .left {
+                flex: 1;
+                box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.75);
+                padding: 20px;
+                position: relative;
+                .edit{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    padding: 5px;
+                    color: red;
+                    font-size: 12px;
+                    background-color: rgb(87, 31, 177);
+                    cursor: pointer;
+                    border-radius: 20px;
+                }
+                .item{
+                    display: flex;
+                    gap: 20px;
+                    .itemimage{
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                        object-fit: cover;
+
+                    }
+                    .details{
+                        .itemTitle{
+                            margin-bottom: 10px;
+
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        .itemDetail{
+                            margin-bottom: 10px;
+                            font-size: 14px;
+                            .itemKey{
+                                font-weight: bold;
+                                margin-right: 5px;
+
+                            }
+                            .itemVaue{
+                                font-weight: 300;
+                            }
+
+                        }
+
+                    }
+
+                }
+                .title{
+                    margin-bottom: 20px;
+                    color: lightgrey;
+                    font-size: 16px;
+                }
+            }
+
+            .right {
+                padding: 5px,20px;
+                flex:2;
+            }
+        }
+        .bottom{
+            box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            margin: 10px 20px;
+            padding: 20px;
+            .title{
+                color:palegreen;
+                font-size:20px;
+                margin-bottom: 20px;
+            }
+
+        }
+    }
+}
