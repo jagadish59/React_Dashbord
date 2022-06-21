@@ -2,6 +2,10 @@ import React from 'react'
 import './widget.scss'
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import StorefrontIcon from '@mui/icons-material/Storefront';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+
+import CreditCardIcon from '@mui/icons-material/CreditCard';
 
 const Widget = ({ type }) => {
     let data;
@@ -22,7 +26,7 @@ const Widget = ({ type }) => {
                 title: "ORDERS",
                 isMoney: false,
                 link: "See all orders",
-                icon: <PersonOutlineOutlinedIcon className='icon' />
+                icon: <StorefrontIcon className='icon' />
 
             }
             break;
@@ -31,7 +35,7 @@ const Widget = ({ type }) => {
                 title: "Earning",
                 isMoney: true,
                 link: "See all earning",
-                icon: <PersonOutlineOutlinedIcon className='icon' />
+                icon: <CurrencyRupeeIcon className='icon' />
 
             }
             break;
@@ -40,7 +44,7 @@ const Widget = ({ type }) => {
                 title:"Balance",
                 isMoney:true,
                 link:"See all balance",
-                icon:<PersonOutlineOutlinedIcon className='icon'/>
+                icon:<CreditCardIcon className='icon'/>
             }
             break;
 
